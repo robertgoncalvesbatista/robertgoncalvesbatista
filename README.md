@@ -22,9 +22,11 @@
   <a href="https://github.com/robertgoncalvesbatista">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=robertgoncalvesbatista&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=robertgoncalvesbatista&layout=compact&langs_count=7&theme=dracula"/>
+    
+  ![Snake animation](https://github.com/robertgoncalvesbatista/robertgoncalvesbatista/blob/output/github-contribution-grid-snake.svg)
 </div>
   
-<div style="display: inline_block" alygn="center"><br>
+<div style="display: inline_block" align="center"><br>
   <img align="center" alt="Robert-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Robert-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
   <img align="center" alt="Robert-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
@@ -33,7 +35,6 @@
   <img align="center" alt="Robert-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
   <img align="center" alt="Robert-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
   
-  ![Snake animation](https://github.com/robertgoncalvesbatista/robertgoncalvesbatista/blob/output/github-contribution-grid-snake.svg)
 </div>
 
 ## 📘 My portfolio projects
