@@ -49,7 +49,7 @@
 ## 📘 My portfolio projects
 
 <p align="left">
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-promobit)](https://github.com/robertgoncalvesbatista/full-stack-promobit)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-promobit)](https://github.com/anuraghazra/github-readme-stats)
   
   <a href="https://github.com/robertgoncalvesbatista/full-stack-promobit">
     <img width="282" src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-promobit&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="full-stack-promobit" />
