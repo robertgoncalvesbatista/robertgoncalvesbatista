@@ -49,9 +49,16 @@
 ## 📘 My portfolio projects
 
 <p align="left">
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-promobit)](https://github.com/robertgoncalvesbatista/full-stack-promobit)
+  
   <a href="https://github.com/robertgoncalvesbatista/full-stack-promobit">
-    <img width="282" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-promobit&theme=react&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide_border=true&show_icons=false" alt="full-stack-promobit">
+    <img width="282" src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-promobit&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="full-stack-promobit" />
   </a>
+  
+  <a href="https://github.com/robertgoncalvesbatista/full-stack-nodejs-g8-solucoes">
+    <img width="282" src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-nodejs-g8-solucoes&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="full-stack-nodejs-g8-solucoes" />
+  </a>
+  
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
     <img width="282" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=DenverCoder1&repo=readme-typing-svg&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="readme-typing-svg">
   </a>
