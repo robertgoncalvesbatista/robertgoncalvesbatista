@@ -62,8 +62,16 @@
   <a href="https://github.com/robertgoncalvesbatista/logical-challenge-promobit">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=logical-challenge-promobit&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="logical-challenge-promobit" />
   </a>
+  
+  <a href="https://github.com/robertgoncalvesbatista/frontend-g8">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=frontend-g8&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="frontend-g8" />
+  </a>
+  
+  <a href="https://github.com/robertgoncalvesbatista/lembrete-backend">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=lembrete-backend&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="lembrete-backend" />
+  </a>
 </p>
-
+  
 <p align="left">
   <a href="https://github.com/robertgoncalvesbatista?tab=repositories&sort=stargazers">
     <img alt="All Repositories" title="All Repositories" src="https://custom-icon-badges.herokuapp.com/badge/-All%20Repos-2962FF?style=for-the-badge&logoColor=white&logo=repo"/>   </a>
