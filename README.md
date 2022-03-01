@@ -53,8 +53,8 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=ts-bulk-message&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="ts-bulk-message" />
   </a>
   
-  <a href="https://github.com/robertgoncalvesbatista/lembrete-backend">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=lembrete-backend&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="lembrete-backend" />
+  <a href="https://github.com/robertgoncalvesbatista/api-nodejs-auth">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=api-nodejs-auth&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="api-nodejs-auth" />
   </a>
 </p>
   
