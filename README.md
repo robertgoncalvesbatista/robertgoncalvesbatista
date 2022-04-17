@@ -6,7 +6,7 @@
 <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Full-stack+PHP+and+Javascript+web+developer;Always+learning+new+things;Experienced+PHP+projects">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Backend+web+developer;Always+learning+new+technologies;Experienced+Javascript+projects">
   </a>
 </p>
 
