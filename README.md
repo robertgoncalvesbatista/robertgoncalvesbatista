@@ -43,8 +43,8 @@
 ## 📘 My portfolio projects
 
 <p align="left">
-  <a href="https://github.com/robertgoncalvesbatista/full-stack-nodejs-g8-solucoes">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-nodejs-g8-solucoes&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="full-stack-nodejs-g8-solucoes" />
+  <a href="https://github.com/robertgoncalvesbatista/knex-express">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=knex-express&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="knex-express" />
   </a>
   
   <a href="https://github.com/robertgoncalvesbatista/api-nodejs-auth">
