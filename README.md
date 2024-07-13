@@ -1,12 +1,12 @@
 <h3 align="center">
-  Welcome to Robert Gonçalves Batista's profile!
+  Welcome to Robert's profile!
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 </h3>
 
 <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Backend+web+developer;Always+learning+new+technologies;Experienced+Javascript+projects">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Fullstack+developer;Laravel+|+React+|+React+Native+|+Express.js;Always+learning+new+technologies">
   </a>
 </p>
 
