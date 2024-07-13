@@ -51,8 +51,8 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=kings-and-pigs&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="kings-and-pigs" />
   </a>
 
-  <a href="https://github.com/robertgoncalvesbatista/full-stack-nodejs-blog">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=full-stack-nodejs-blog&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="full-stack-nodejs-blog" />
+  <a href="https://github.com/robertgoncalvesbatista/one-piece">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=one-piece&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="one-piece" />
   </a>
 </p>
   
