@@ -26,9 +26,6 @@
 </div>
 
 <!-- GitHub Stats -->
-
-##
-
 <div align="center">
   <a href="https://github.com/robertgoncalvesbatista">
 
@@ -43,16 +40,20 @@
 ## 📘 My portfolio projects
 
 <p align="left">
-  <a href="https://github.com/robertgoncalvesbatista/knex-express">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=knex-express&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="knex-express" />
-  </a>
-  
   <a href="https://github.com/robertgoncalvesbatista/kings-and-pigs">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=kings-and-pigs&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="kings-and-pigs" />
   </a>
 
   <a href="https://github.com/robertgoncalvesbatista/one-piece">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=one-piece&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="one-piece" />
+  </a>
+
+  <a href="https://github.com/robertgoncalvesbatista/pokemon">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=pokemon&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="pokemon" />
+  </a>
+
+  <a href="https://github.com/robertgoncalvesbatista/knex-express">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=knex-express&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="knex-express" />
   </a>
 </p>
   
@@ -94,7 +95,6 @@
     <a href="#"><img alt="MySQL" src="https://img.shields.io/badge/MySQL-00f.svg?logo=mysql&logoColor=white"></a>
     <a href="#"><img alt="Heroku" src="https://img.shields.io/badge/Heroku-430098.svg?logo=heroku&logoColor=white"></a>
     <a href="#"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white"></a>
-  
 </p>
 
 ### Software and tools
