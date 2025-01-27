@@ -32,13 +32,9 @@
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=robertgoncalvesbatista&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=robertgoncalvesbatista&layout=compact&langs_count=7&theme=dracula"/>
-
-![Snake animation](https://github.com/robertgoncalvesbatista/robertgoncalvesbatista/blob/output/github-contribution-grid-snake.svg)
-
 </div>
 
 ## 📘 My portfolio projects
-
 <p align="left">
   <a href="https://github.com/robertgoncalvesbatista/kings-and-pigs">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=robertgoncalvesbatista&repo=kings-and-pigs&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&theme=react&show_icons=false" alt="kings-and-pigs" />
@@ -66,7 +62,6 @@
 ## 🛠️ My favorite tools
 
 ### Programming languages
-
 <p>
     <a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white"></a>
     <a href="#"><img alt="TypeScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black"></a>
@@ -74,7 +69,6 @@
 </p>
 
 ### Technologies
-
 <p>
     <a href="#"><img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6.svg?logo=css3&logoColor=white"></a>
     <a href="#"><img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26.svg?logo=html5&logoColor=white"></a>
@@ -88,7 +82,6 @@
 </p>
 
 ### Databases and cloud hosting
-
 <p>
     <a href="#"><img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-4ea94b.svg?logo=mongodb&logoColor=white"></a>
     <a href="#"><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-316192.svg?logo=mysql&logoColor=white"></a>
@@ -98,7 +91,6 @@
 </p>
 
 ### Software and tools
-
 <p>
     <a href="#"><img alt="Linux" src="https://img.shields.io/badge/Linux-E34F26?logo=linux&logoColor=white"></a>
     <a href="#"><img alt="Git" src="https://img.shields.io/badge/Git-F05033.svg?logo=git&logoColor=white"></a>
