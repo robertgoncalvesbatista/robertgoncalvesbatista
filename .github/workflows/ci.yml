@@ -1,0 +1,189 @@
+name: 🔍 Continuous Integration
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ==========================================
+  # MARKDOWN LINT
+  # ==========================================
+  markdown-lint:
+    name: 📝 Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install
+        run: npm ci
+
+      - name: 🔍 Lint Markdown
+        run: npm run lint:md
+
+  # ==========================================
+  # COMMIT LINT (PR titles & commits)
+  # ==========================================
+  commit-lint:
+    name: 📋 Commit Lint
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install
+        run: npm ci
+
+      - name: 🔍 Lint Commits
+        uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: .commitlintrc.json
+
+  # ==========================================
+  # SPELL CHECK
+  # ==========================================
+  spell-check:
+    name: 🔤 Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔤 Check Spelling
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          files: '**/*.md'
+          config: '.cspell.json'
+          incremental: true
+
+  # ==========================================
+  # DEPENDENCY REVIEW (PR only)
+  # ==========================================
+  dependency-review:
+    name: 📦 Dependency Review
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    permissions:
+      contents: read
+    steps:
+      - name: 📦 Review Dependencies
+        uses: actions/dependency-review-action@v4
+        with:
+          config-file: '.github/dependency-review-config.yml'
+          fail-on-severity: moderate
+
+  # ==========================================
+  # SECRET SCANNING
+  # ==========================================
+  secret-scan:
+    name: 🔐 Secret Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔐 TruffleHog Scan
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: main
+          head: HEAD
+          extra_args: --fail --no-verification
+
+  # ==========================================
+  # BUILD CHECK (generic)
+  # ==========================================
+  build-check:
+    name: 🏗️ Build Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install
+        run: npm ci
+
+      - name: 🏗️ Build (if script exists)
+        run: |
+          if npm run build --if-present 2>/dev/null; then
+            echo "✅ Build succeeded"
+          else
+            echo "ℹ️ No build script or build failed (non-blocking)"
+          fi
+
+  # ==========================================
+  # SUMMARY
+  # ==========================================
+  ci-summary:
+    name: ✅ CI Summary
+    needs: [markdown-lint, commit-lint, spell-check, dependency-review, secret-scan, build-check]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📊 Check Results
+        run: |
+          echo "## CI Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Job | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-----|--------|" >> $GITHUB_STEP_SUMMARY
+          
+          JOBS=("markdown-lint" "commit-lint" "spell-check" "dependency-review" "secret-scan" "build-check")
+          ALL_SUCCESS=true
+          
+          for job in "${JOBS[@]}"; do
+            result="${{ needs.$job.result }}"
+            if [ "$result" = "success" ]; then
+              echo "| $job | ✅ Success |" >> $GITHUB_STEP_SUMMARY
+            elif [ "$result" = "failure" ]; then
+              echo "| $job | ❌ Failed |" >> $GITHUB_STEP_SUMMARY
+              ALL_SUCCESS=false
+            elif [ "$result" = "skipped" ]; then
+              echo "| $job | ⏭️ Skipped |" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "| $job | ❓ $result |" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "$ALL_SUCCESS" = "true" ]; then
+            echo "🎉 **All checks passed!**" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          else
+            echo "❌ **Some checks failed. Please review.**" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi

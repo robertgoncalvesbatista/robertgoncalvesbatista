@@ -1,0 +1,51 @@
+name: 📌 Atualizar Projetos em Destaque
+
+on:
+  schedule:
+    # Executa toda segunda-feira às 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/update-pinned-projects.js'
+      - '.github/workflows/update-pinned-projects.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-pinned:
+    name: Atualizar projetos fixados
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📌 Executar script de atualização
+        run: node scripts/update-pinned-projects.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📤 Commit e Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --quiet README.md; then
+            echo "✅ Projetos em destaque já estão atualizados"
+          else
+            git add README.md
+            git commit -m "📌 Atualização automática dos projetos em destaque [$(date -u +'%Y-%m-%d')]"
+            git push
+            echo "✅ Projetos em destaque atualizados!"
+          fi

@@ -1,0 +1,52 @@
+# Dependency Review Configuration
+# See: https://github.com/actions/dependency-review-action#configuration-options
+
+# Fail on vulnerabilities of this severity or higher
+# Options: low, moderate, high, critical
+fail-on-severity: moderate
+
+# Allow specific vulnerabilities by GHSA ID
+# allow-ghsas: []
+
+# Fail on licenses that are not allowed
+# allow-licenses: []
+# deny-licenses:
+#   - "GPL-3.0-only"
+#   - "AGPL-3.0-only"
+#   - "SSPL-1.0"
+
+# Scope to check (runtime, development, or all)
+# scope: "all"
+
+# Configuration for npm
+# npm:
+#   # Path to package-lock.json or yarn.lock
+#   lockfile: "package-lock.json"
+
+# Configuration for composer
+# composer:
+#   lockfile: "composer.lock"
+
+# Configuration for pip
+# pip:
+#   requirements: "requirements.txt"
+
+# Configuration for cargo
+# cargo:
+#   lockfile: "Cargo.lock"
+
+# Configuration for go
+# go:
+#   modfile: "go.mod"
+
+# Configuration for maven
+# maven:
+#   pomfile: "pom.xml"
+
+# Configuration for gradle
+# gradle:
+#   lockfile: "gradle.lockfile"
+
+# Configuration for nuget
+# nuget:
+#   lockfile: "packages.lock.json"

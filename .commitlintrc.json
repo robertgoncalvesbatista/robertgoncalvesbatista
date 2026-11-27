@@ -1,0 +1,63 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "type-enum": [
+      2,
+      "always",
+      [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "chore",
+        "perf",
+        "ci",
+        "build",
+        "revert",
+        "wip"
+      ]
+    ],
+    "type-case": [2, "always", "lower-case"],
+    "type-empty": [2, "never"],
+    "scope-case": [2, "always", "lower-case"],
+    "subject-case": [2, "always", "sentence-case"],
+    "subject-empty": [2, "never"],
+    "subject-full-stop": [2, "never", "."],
+    "header-max-length": [2, "always", 72],
+    "body-max-line-length": [2, "always", 100],
+    "footer-max-line-length": [2, "always", 100]
+  },
+  "prompt": {
+    "messages": {
+      "type": "Selecione o tipo de mudança:",
+      "scope": "Escopo (opcional):",
+      "customScope": "Escopo personalizado:",
+      "subject": "Descrição curta (imperativo, minúscula):",
+      "body": "Descrição longa (opcional):",
+      "isBreaking": "Introduz breaking change?",
+      "breakingBody": "Descreva o breaking change:",
+      "breaking": "Lista breaking changes (opcional):",
+      "isIssueAffected": "Afeta alguma issue?",
+      "issuesBody": "Referencie as issues (ex: closes #123):",
+      "issues": "Issues relacionadas (opcional):"
+    },
+    "types": [
+      { "value": "feat", "name": "feat:     ✨ Nova funcionalidade", "description": "Uma nova feature" },
+      { "value": "fix", "name": "fix:      🐛 Correção de bug", "description": "Correção de um bug" },
+      { "value": "docs", "name": "docs:     📝 Documentação", "description": "Mudanças na documentação" },
+      { "value": "style", "name": "style:    💅 Estilo/Formatação", "description": "Formatação, sem mudança de lógica" },
+      { "value": "refactor", "name": "refactor: ♻️ Refatoração", "description": "Refatoração de código" },
+      { "value": "test", "name": "test:     ✅ Testes", "description": "Adição ou correção de testes" },
+      { "value": "chore", "name": "chore:    🔧 Manutenção", "description": "Build, configs, deps, etc." },
+      { "value": "perf", "name": "perf:     ⚡ Performance", "description": "Melhoria de performance" },
+      { "value": "ci", "name": "ci:       🤖 CI/CD", "description": "Mudanças em CI/CD" },
+      { "value": "build", "name": "build:    📦 Build", "description": "Sistema de build, dependências" },
+      { "value": "revert", "name": "revert:   ⏪ Reverter", "description": "Reverte commit anterior" },
+      { "value": "wip", "name": "wip:      🚧 Work in Progress", "description": "Commit em andamento" }
+    ],
+    "useEmoji": true,
+    "themeColorCode": "36BCF7"
+  }
+}
